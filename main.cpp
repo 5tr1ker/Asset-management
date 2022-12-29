@@ -14,6 +14,16 @@ int main() {
     rm.getSystemInfo(chr);
     */
     
-    rm.createResource();
+    // 1026358323 의 정보 가져오기
+    // rm.getDetailResource("1026358323");
+
+    //정보 가져오기
+    //rm.getAllResource(5 , 5);
+
+    // 정보 검색
+    // rm.searchResource("resourcename" , "bbb", 20 , 1);
+
+    // 정보 수정
+    rm.modifiyResource("1026358323" , "resourcename" , "holyShit!");
     return 0;
 }
