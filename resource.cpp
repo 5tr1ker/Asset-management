@@ -207,7 +207,6 @@ void resourceManagement::modifiyResource(const char* ulid, const char* item, con
 	string query = "UPDATE resource_details SET " + queryModify;
 	strcpy_s(sql, query.c_str());
 
-	cout << sql;
 	if (mysql_query(conn, sql) == 0) {
 		result = mysql_store_result(conn);
 		while ((row = mysql_fetch_row(result)) != NULL) {

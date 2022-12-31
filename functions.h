@@ -27,7 +27,7 @@ public:
 	void modifiyResource(const char* ulid , const char* item , const char* data);
 	// 히스토리
 	void getHistory();
-	void createHistory();
+	void createHistory(const char* division, const char* classification, const char* content, const char* etc);
 };
 
 #endif
